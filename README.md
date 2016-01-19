@@ -14,7 +14,6 @@ Bonus: create a visualization chart to display the records (preferrably animated
 - there is no time limit. you can polish the application as you see fit before submitting.
 - Any framework / libraries can be used to accomplish the task
 - completed exam should be pushed through github on a public repo 
-- send us a link of the repo you created.
 
 ## Key Factors fo consider:
 - clearly written code is a bit plus
