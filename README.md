@@ -16,10 +16,10 @@ Bonus: create a visualization chart to display the records (preferrably animated
 - completed exam should be pushed through github on a public repo 
 
 ## Key Factors fo consider:
-- clearly written code is a bit plus
+- clearly written code is a big plus
 - use best practices to write code
 - present the app in the best design possible
-- we'll be looking at how you commit code.
+- we'll be looking at how you commit code. 
 
 ## References: 
 - https://api.github.com/search/repositories?q=bootstrap
