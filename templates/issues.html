@@ -1,0 +1,32 @@
+<div class="issues">
+  <a href="" ui-sref="repos({search: vm.repo})">
+    <h3 ng-bind="vm.repo + ' ISSUES'"></h3>
+  </a>
+  <table class="striped">
+    <tr>
+      <th>Title</th>
+      <th>Submitted</th>
+    </tr>
+    <tr>
+      <td class="center" colspan="2" ng-if="vm.isLoading">
+        Loading...
+      </td>
+      <td class="center" colspan="2" ng-if="!vm.issues.items.length && !vm.isLoading">
+        Empty.
+      </td>
+    </tr>
+    <tr ng-repeat="issue in vm.issues.items track by $index">
+      <td>
+        <a ng-href="{{issue.html_url}}" target="_blank">
+          <span ng-bind="issue.title"></span>
+        </a>
+      </td>
+      <td class="submitter">
+        <a ng-href="{{issue.user.html_url}}" target="_blank">
+          <img ng-src="{{issue.user.avatar_url}}"></img>
+          <span ng-bind="issue.user.login"></span>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>

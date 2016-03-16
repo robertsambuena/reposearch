@@ -1,0 +1,23 @@
+<html ng-app="app">
+  <head>
+    <title>
+      Repo Search Test
+    </title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="/templates/index.css">
+    <link rel="stylesheet" href="/templates/repos.css">
+    <link rel="stylesheet" href="/templates/issues.css">
+  </head>
+
+  <body ng-controller="mainController">
+    <div id="content" class="container" ui-view="main"></div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="/js/index.js"></script>
+  <script src="/js/dataService.js"></script>
+  <script src="/js/reposCtrl.js"></script>
+  <script src="/js/issuesCtrl.js"></script>
+</html>

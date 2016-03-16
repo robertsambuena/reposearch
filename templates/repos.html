@@ -1,0 +1,45 @@
+<div class="repos">
+  <div class="form">
+    <input type="text" placeholder="Search github repo..." ng-model="vm.q" ng-model-options="{ debounce: 700 }">
+  </div>
+  <table class="striped">
+    <tr>
+      <th>Name</th>
+      <!-- <th>Url</th> -->
+      <th>Description</th>
+      <th>Forks</th>
+      <th>Stars</th>
+      <th>Issues</th>
+    </tr>
+    <tr>
+      <td class="center" colspan="6" ng-if="vm.isLoading">
+        Loading...
+      </td>
+      <td class="center" colspan="6" ng-if="!vm.repos.items.length && !vm.isLoading">
+        Empty.
+      </td>
+    </tr>
+    <tr ng-repeat="repo in vm.repos.items track by $index">
+      <td>
+        <span ng-bind="repo.full_name"></span><br>
+        <a ng-href="{{repo.html_url}}" target="_blank">
+          <span ng-bind="repo.html_url"></span>
+        </a>
+      </td>
+      <td>
+        <span ng-bind="repo.description"></span>
+      </td>
+      <td>
+        <span ng-bind="repo.forks_count | number"></span>
+      </td>
+      <td>
+        <span ng-bind="repo.stargazers_count | number"></span>
+      </td>
+      <td>
+        <a href="" ui-sref="issues({repo: repo.full_name})">
+          <span ng-bind="repo.open_issues_count | number"></span>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
