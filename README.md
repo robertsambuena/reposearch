@@ -13,15 +13,20 @@ Bonus: create a visualization chart to display the records (preferrably animated
 ## Rules/Pointers:
 - there is no time limit. you can polish the application as you see fit before submitting.
 - Any framework / libraries can be used to accomplish the task
-- completed exam should be pushed through github on a public repo 
+- completed exam should be pushed through github on a public repo
 
 ## Key Factors fo consider:
 - clearly written code is a big plus
 - use best practices to write code
 - present the app in the best design possible
-- we'll be looking at how you commit code. 
+- we'll be looking at how you commit code.
 
-## References: 
+## References:
 - https://api.github.com/search/repositories?q=bootstrap
 - https://developer.github.com/v3/search/#search-issues
 - https://api.github.com/search/issues?q=repo:username/reponame
+
+## How to install:
+- `npm install`
+- 'npm http-server -g'
+- `http-server -p8000`
