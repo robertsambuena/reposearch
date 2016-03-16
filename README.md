@@ -28,5 +28,5 @@ Bonus: create a visualization chart to display the records (preferrably animated
 
 ## How to install:
 - `npm install`
-- 'npm http-server -g'
+- `npm http-server -g`
 - `http-server -p8000`
